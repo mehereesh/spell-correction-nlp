@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Language Spell Checker</title>
+    <!-- Dictionary files -->
+    <script src="https://cdn.jsdelivr.net/npm/typo-js@1.2.3/typo/typo.js"></script>
+    <script>
+      // Preload dictionaries
+      window.typoJsDictionaryFiles = {
+        'en_US': {
+          aff: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/en_US/en_US.aff',
+          dic: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/en_US/en_US.dic'
+        },
+        'es_ES': {
+          aff: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/es_ES/es_ES.aff',
+          dic: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/es_ES/es_ES.dic'
+        },
+        'fr_FR': {
+          aff: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/fr_FR/fr_FR.aff',
+          dic: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/fr_FR/fr_FR.dic'
+        },
+        'de_DE': {
+          aff: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/de_DE/de_DE.aff',
+          dic: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/de_DE/de_DE.dic'
+        },
+        'it_IT': {
+          aff: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/it_IT/it_IT.aff',
+          dic: 'https://cdn.jsdelivr.net/npm/typo-js@1.2.3/dictionaries/it_IT/it_IT.dic'
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
